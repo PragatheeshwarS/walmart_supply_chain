@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="blur-screen" id="blur-screen"></div>
+        <div class="container" style="display: flex;">
+            <div class="navigation">
+                <div class="image-text">
+                    <div class="image"></div>
+                    <div class="text">
+                        <h2>Welcome <br>Pragatheeshwar</h2>
+                    </div>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><a href="../home/index.html">Home</a></li>
+                        <li><a href="../order_placement/index.html">Order Placement</a></li>
+                        <li><a href="../invoice/index.html">Invoice</a></li>
+                        <li><a href="../payment/index.html">Payment</a></li>
+                        <li><a href="../three-way-matching/index.html"  style="color: rgb(167, 165, 165);">Three Way Matching</a></li>
+                        <li><a href="#">Inspection</a></li>
+                        <li><a href="#">Resolution</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="header-class">
+                    <div class="text-for-header-class">
+                        <h2 class="header-text">Three Way Matching</h2>
+                    </div>
+                    <div class="notification">
+                        <img src="./images/notification.png" style="width: 32px; height: 32px;">
+                        <p>2</p> 
+                    </div>
+                </div>
+                <table id="myTable">
+                    <thead>
+                        <tr>
+                            <th>S.NO</th>
+                            <th>ORDER ID</th>
+                            <th>VENDOR</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="add-items" id="add-items">
+            <!-- <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>ITEM</th>
+                        <th>QUANTITY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Apple</td>
+                        <td>2500</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Orange</td>
+                        <td>1360</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mango</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Pineapple</td>
+                        <td>965</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Banana</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Kivi</td>
+                        <td>800</td>
+                    </tr>
+                </tbody>
+            </table> -->
+            <div class="box-enclosed-for-process-time-line">
+                <div id="popup" class="popup">
+                    <div class="cubes-and-lines">
+                        <img src="./images/3d-cube.png" style="margin-left: 5vw;" class="popup-image">
+                        <div class="line-connecting-cubes"></div>
+                        <img src="./images/3d-cube.png" class="popup-image">
+                        <div class="line-connecting-cubes"></div>
+                        <img src="./images/3d-cube.png" class="popup-image">
+                        <div class="line-connecting-cubes"></div>
+                        <img src="./images/3d-cube.png" class="popup-image">
+                    </div>
+                </div>
+                <div class="text-for-the-cubes">
+                    <div class="text1">
+                        <p>Order</p>
+                    </div>
+                    <div class="text2" style="margin-left: 0.5vw;">
+                        <p>Invoice</p>
+                    </div>
+                    <div class="text3" style="margin-left: -0.5vw;">
+                        <p>Delivery</p>
+                    </div>
+                    <div class="text4" style="margin-left: -1.5vw;">
+                        <p>Completion</p>
+                    </div>
+                </div>
+            </div>
+            <button id="addInputBtn" onclick="
+                                                document.getElementById('add-items').style.display='none'
+                                                document.getElementById('add-items-for-check').style.display='block';
+                                            ">
+                                            Check
+            </button>
+        </div>
+
+        <div class="add-items-for-check" id="add-items-for-check">
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>ITEM</th>
+                        <th>QUANTITY</th>
+                        <th>PRICE / ITEM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Apple</td>
+                        <td>2500</td>
+                        <td>₹25</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Orange</td>
+                        <td>1360</td>
+                        <td>₹20</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mango</td>
+                        <td>5000</td>
+                        <td>₹20</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Pineapple</td>
+                        <td>965</td>
+                        <td>₹30</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Banana</td>
+                        <td>2000</td>
+                        <td>₹12</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Kivi</td>
+                        <td>800</td>
+                        <td>₹15</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>TOTAL : <span>₹254,650</span></h3>
+            <button id="addInputBtn-for-check">Add</button>
+            <button id="checking-button"  onclick="
+                                                    document.getElementById('blur-screen').style.display='none';
+                                                    document.getElementById('add-items-for-check').style.display='none';
+                                                    window.alert('Items matched for the order ID :A736GAKDHHUDB872GGGGGSUHAH987\nThree Way Matching successfull');
+                                                ">
+                                                Check
+            </button>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

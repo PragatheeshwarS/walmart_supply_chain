@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    width: 22%;
+    height: 100vh;
+    background-color: #D3D3D3;
+}
+
+.image-text .image{
+    position: absolute;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    background-color: #767676;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    background-image: url('./images/praga4.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-text .text{
+    position: absolute;
+    margin-top: 13vw;
+    margin-left: 2vw;
+    font-family :'Courier New', Courier, monospace;
+}
+
+.options{
+    position: absolute;
+    margin-top: 18vw;
+    margin-left: 2vw;
+    ul{
+        list-style: none;
+        font-size: 24px;
+        line-height: 2.25;
+        a{
+            text-decoration: none;
+            color: black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+}
+
+.options ul a:hover{
+    color: rgb(167, 165, 165);
+    transition: 0.2s;
+}
+
+/*-----------------------------------------Navigation Ends------------------------------------------------*/
+
+
+
+/*-----------------------------------------BLUR SCREENS-------------------------------------*/
+.blur-screen{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.81) ;
+    z-index: 1;
+}
+
+.main{
+    width: 78%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.header-class{
+    display: flex;
+    margin-top: 3vw;
+}
+
+.header-text{
+    margin-left: 28vw;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.notification{
+    margin-left: 34.5vw;
+    p{
+        position: absolute;
+        margin-left: 2vw;
+        margin-top: -3vw;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+
+
+
+/*-----------------------------------------Main------------------------------------------------*/
+table {
+    font-family:'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    margin-top: 2vw;
+    width: 90%;
+    margin-left: 5%;
+    img{
+        width: 25px;
+        height: 25px;
+        margin-left: 40%;
+    }
+}
+
+table img:hover{
+    cursor: pointer;
+}
+
+td, th {
+    border: 3px solid #ffffff;
+    text-align: center;
+    padding: 8px;
+}
+
+thead{
+    font-size: 22px;
+}
+
+tbody{
+    font-size: 18px;
+}
+
+tr {
+    background-color: #dddddd;
+}
+
+.search-box{
+    /* margin-top: 2vw; */
+    margin-left: 36vw;
+}
+
+.btn-search{
+    margin-top: 2vw;
+    margin-left: 30vw;
+    width: 116px;
+    height: 37px;
+    border-radius: 10px;
+    border: none;
+    background-color: #D9D9D9;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.btn-search:hover{
+    background-color: #ECECEC;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
+.add-items{
+    display: none;
+    position: relative;
+    z-index: 99999;
+    margin-top: -40vw;
+    width: 50vw;
+    height: 30vw;
+    margin-left: 25%;
+    /* background-color: rebeccapurple; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#addInputBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    margin-top: 1vw;
+    margin-left: 41.5vw;
+    border-radius: 5px;
+    /* background-color: #007BFF; */
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#addInputBtn:hover {
+    background-color: #dad8d8;
+    transition: 0.3s;
+}

@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    width: 22%;
+    height: 100vh;
+    background-color: #D3D3D3;
+}
+
+.image-text .image{
+    position: absolute;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    background-color: #767676;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    background-image: url('./images/praga4.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-text .text{
+    position: absolute;
+    margin-top: 13vw;
+    margin-left: 2vw;
+    font-family :'Courier New', Courier, monospace;
+}
+
+.options{
+    position: absolute;
+    margin-top: 18vw;
+    margin-left: 2vw;
+    ul{
+        list-style: none;
+        font-size: 24px;
+        line-height: 2.25;
+        a{
+            text-decoration: none;
+            color: black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+}
+
+.options ul a:hover{
+    color: rgb(167, 165, 165);
+    transition: 0.2s;
+}
+
+/*-----------------------------------------Navigation Ends------------------------------------------------*/
+
+.main{
+    width: 78%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.header-class{
+    display: flex;
+    margin-top: 3vw;
+}
+
+.header-text{
+    margin-left: 28vw;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.notification{
+    margin-left: 22vw;
+    p{
+        position: absolute;
+        margin-left: 2vw;
+        margin-top: -3vw;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+
+/*---------------------------------------This is the workflow chart --------------------------------*/
+.box-enclosed-for-process-time-line{
+    width: 95%;
+    height: 10vw;
+    margin-left: 2.5%;
+    margin-top: 2vw;
+    /* background-color: red; */
+    border: dashed;
+}
+
+.cubes-and-lines{
+    display: flex;
+    img{
+        width: 70px;
+        height: 70px;
+        margin-top: 1vw;
+    }
+    gap: 2vw;
+}
+
+.line-connecting-cubes{
+    width: 164px;
+    height: 2px;
+    margin-top: 3vw;
+    background-color: black;
+}
+
+.text-for-the-cubes{
+    display: flex;
+    gap: 15.5vw;
+    margin-top: 1vw;
+    margin-left: 5.5vw;
+    p{
+        font-size: 20px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/*---------------------------------------This is the workflow chart end--------------------------------*/
+
+.search-box{
+    margin-top: 7vw;
+}
+
+.search-order-id{
+    width: 595px;
+    height: 48px;
+    margin-left: 18vw;
+    background-color: #ECECEC;
+    border: none;
+    border-radius: 10px;
+}
+
+.search-box input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    text-align: center;
+}
+.search-order-id::placeholder{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn-search{
+    margin-top: 2vw;
+    margin-left: 30vw;
+    width: 176px;
+    height: 37px;
+    border-radius: 10px;
+    border: none;
+    background-color: #D9D9D9;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.btn-search:hover{
+    background-color: #ECECEC;
+    cursor: pointer;
+    transition: 0.2s;
+}
